@@ -1,5 +1,4 @@
 "use client";
-import { div, p } from "framer-motion/client";
 import {
   ArrowRight,
   BarChart2,
@@ -13,12 +12,11 @@ import {
   X,
   Zap,
 } from "lucide-react";
-import Image from "next/image";
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 // import Router from "next/navigation";
 import { useRouter } from "next/navigation";
-const Animatedsection = ({ children }: any) => {
+const Animatedsection = ({ children }:any) => {
   const ref = useRef(null);
   const isinview = useInView(ref, { once: true, amount: 0.3 });
   return (
@@ -157,7 +155,7 @@ export default function Home() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors transform hover:scale-105"
-          onClick={()=>router.push('/dashboard')}
+          onClick={() => router.push("/dashboard")}
         >
           Start Trading
         </motion.button>

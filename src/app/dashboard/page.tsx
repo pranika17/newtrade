@@ -8,7 +8,6 @@ import {
   ShoppingCart,
   User,
   TrendingUp,
-  TrendingDown,
   Plus,
   ChevronRight,
   BarChart2,
@@ -36,7 +35,7 @@ const fadeInUp = {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [notifications, setNotifications] = useState(3);
+  const notifications = 3;
   const router = useRouter();
   return (
     <motion.header
